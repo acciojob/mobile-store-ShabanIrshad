@@ -4,6 +4,8 @@ import './../styles/App.css';
 import { BrowserRouter,Switch,Route,Link } from "react-router-dom";
 import ProductList from "./ProductList";
 import ProductDetails from "./ProductDetails";
+import AdminPanel from "./AdminPanel";
+import AdminProduct from "./AdminProduct";
 
 const App = () => {
   const ProductArray=[
@@ -79,6 +81,13 @@ const App = () => {
         <Route path='/products/:id'>
         <ProductDetails products={products}/>
         </Route>
+        <Route path='/admin/products/:id'>
+        <AdminProduct products={products}/>
+        </Route>
+        <Route path='/admin'>
+        <AdminPanel products={products}/>
+        </Route>
+        
       </Switch>
       
 
