@@ -82,7 +82,10 @@ const App = () => {
         <ProductDetails products={products}/>
         </Route>
         <Route path='/admin/products/:id'>
-        <AdminProduct products={products}/>
+        <AdminProduct products={products} setProducts={setProducts}/>
+        </Route>
+        <Route path='/admin/add'>
+        <AdminProduct products={[]} setProducts={setProducts}/>
         </Route>
         <Route path='/admin'>
         <AdminPanel products={products}/>

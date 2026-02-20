@@ -14,6 +14,7 @@ const ProductDetails=({products})=>{
                     <h2>{product.name}</h2>
                     <h3>Desc:</h3>
                     <p className='desc'>{product.desc}</p>
+                    <b><p>Price:{product.price}</p></b>
                     <Link to='/'><button>Other Products</button></Link>
                     
                 </div>
